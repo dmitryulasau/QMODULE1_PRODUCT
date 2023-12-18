@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Vitamin logo" src="./assets/vitamin-logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="section-hero">
+        <div class="container hero">
+          <div class="hero-img-box">
+            <img src="./assets/hero.jpg" class="hero-img" alt="Woman yoga" />
+          </div>
+
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Energize your day with Vitamins!</h1>
+            <p class="hero-description">
+              Unlock a healthier you with our convenient vitamin subscription a
+              simple, hassle-free way to nourish your body every day, ensuring
+              you never miss a beat in your wellness journey.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Subscribe Now!</a
+            >
+            <a
+              href="https://www.hsph.harvard.edu/nutritionsource/vitamins/"
+              target="_blank"
+              class="btn btn--outline"
+              >Learn more &darr;</a
+            >
+            <div class="delivered-vit">
+              <div class="delivered-imgs">
+                <img
+                  src="https://res.cloudinary.com/dulasau/image/upload/v1661875818/noAvatar_wdsdee.png"
+                  alt="Customer photo"
+                />
+                <img
+                  src="https://res.cloudinary.com/dulasau/image/upload/v1661875818/noAvatar_wdsdee.png"
+                  alt="Customer photo"
+                />
+                <img
+                  src="https://res.cloudinary.com/dulasau/image/upload/v1661875818/noAvatar_wdsdee.png"
+                  alt="Customer photo"
+                />
+                <img
+                  src="https://res.cloudinary.com/dulasau/image/upload/v1661875818/noAvatar_wdsdee.png"
+                  alt="Customer photo"
+                />
+                <img
+                  src="https://res.cloudinary.com/dulasau/image/upload/v1661875818/noAvatar_wdsdee.png"
+                  alt="Customer photo"
+                />
+                <img
+                  src="https://res.cloudinary.com/dulasau/image/upload/v1661875818/noAvatar_wdsdee.png"
+                  alt="Customer photo"
+                />
+              </div>
+              <p class="delivered-text">
+                <span>100,000+</span> Vitamins delivered last year!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <span class="subheading">Pricing</span>
+          <h2 class="heading-secondary">
+            Affordable nutrition for well-being.
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">ESSENTIAL</p>
+              <p class="plan-price"><span>$</span>48</p>
+              <p class="plan-text">per month. That's just $12 per bottle!</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>1 bottle a week</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Order from 11am to 9pm</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Free Delivery</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#cta" class="btn btn--full">Start vitamin intake</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="plan-header">
+              <p class="plan-name">Absolute</p>
+              <p class="plan-price"><span>$</span>88</p>
+              <p class="plan-text">per month. That's just $11 per bottle!</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span><strong>2 bottles</strong> a week</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Order <strong>24/7</strong></span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Free Delivery</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Priority support</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#cta" class="btn btn--full">Start vitamin intake</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid">
+          <aside class="plan-details">
+            Prices include all applicable taxes. You can cancel at any time.
+            Both plans include the following:
+          </aside>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="medkit-outline"></ion-icon>
+            <p class="feature-title">No pharmacy visit!</p>
+            <p class="feature-text">
+              Manage your health from the comfort of your home.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+            <p class="feature-title">Organic</p>
+            <p class="feature-text">
+              Organic vitamins, sourced from natural and sustainable
+              ingredients.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="call-outline"></ion-icon>
+            <p class="feature-title">Customer support</p>
+            <p class="feature-text">
+              Dedicated and responsive customer support team.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+            <p class="feature-title">Pause anytime</p>
+            <p class="feature-text">
+              Going on vacation? Just pause your subscription, and we refund
+              unused days.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- CTA -->
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Get your first vitamins for free!
+              </h2>
+              <p class="cta-text">
+                Unlock the power of wellness with our special offer:
+                complimentary vitamins to support your health journey—because
+                everyone deserves the benefits of a vibrant life!
+              </p>
+
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="yourmail@example.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube Ad</option>
+                    <option value="ad">Facebook Ad</option>
+                    <option value="others">Other</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Vitamins on a plate"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">Dmitry Ulasau &copy; 2023. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

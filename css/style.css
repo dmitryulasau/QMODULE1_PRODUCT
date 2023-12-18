@@ -1,0 +1,332 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  margin-top: 3rem;
+  height: 10rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 9px;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 3rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--highlight-color);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--highlight-color);
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  background-color: var(--primary-color);
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 80%;
+}
+
+.delivered-vit {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid var(--primary-color);
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: var(--text-color);
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(67, 49, 141, 0.5),
+      rgba(130, 101, 167, 0.5)
+    ),
+    url("../assets/vit.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: var(--white);
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/**************************/
+/* PRICING SECTION */
+/**************************/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #c6bee4;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: #c6bee4;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.pricing-plan--complete::after {
+  content: "GREAT VALUE!";
+  position: absolute;
+  top: 3.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #e465ab;
+  padding: 0.8rem 100%;
+
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  white-space: nowrap;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.plan-sing-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.feature-icon {
+  color: var(--highlight-color);
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: var(--secondary-color);
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  padding: 4rem 0;
+  border-top: 1px solid #eee;
+  font-size: 2rem;
+  color: var(--text-color);
+}
